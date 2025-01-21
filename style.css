@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Main container styling */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Search container style */
+.search-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Search bar styling */
+#searchBar {
+  padding: 10px;
+  font-size: 18px;
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Book list styling */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Individual book styling */
+.book {
+  background-color: #e9ecef;
+  margin: 15px;
+  padding: 20px;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.book:hover {
+  transform: translateY(-5px);
+}
+
+/* Book title styling */
+.book h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Book details styling */
+.book p {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #searchBar {
+    width: 80%;
+  }
+
+  .book {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  #searchBar {
+    width: 100%;
+  }
+
+  .book {
+    width: 100%;
+  }
+}
